@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Проекты - EcoVolunteer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="preloader"><div class="loader"></div></div>
+    <header>
+        <div class="logo">EcoGlobal</div>
+        <nav>
+            <a href="index.html" data-lang="navHome">Главная</a>
+            <a href="events.html" data-lang="navEvents" class="active">Проекты</a>
+            <a href="favorites.html" data-lang="navFav">Избранное</a>
+            <a href="gallery.html" data-lang="navGallery">Галерея</a>
+            <a href="contact.html" data-lang="navContact">Связь</a>
+        </nav>
+        <div style="display:flex; gap:10px;">
+            <button id="theme-toggle">🌓</button>
+            <button id="lang-toggle">RU</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="filters hidden-scroll">
+            <button class="filter-btn active" data-filter="all" data-lang="filterAll">Все</button>
+            <button class="filter-btn" data-filter="eco" data-lang="filterEco">Экология</button>
+            <button class="filter-btn" data-filter="city" data-lang="filterCity">Город</button>
+            <button class="filter-btn" data-filter="animals" data-lang="filterAnimals">Животные</button>
+        </div>
+
+        <div class="cards-grid">
+            <!-- Экология -->
+            <div class="card project-card hidden-scroll" data-category="eco">
+                <h3 data-lang="ev1Title">Посадка саксаула</h3>
+                <p data-lang="ev1Desc">Озеленение высохшего дна Аральского моря.</p>
+                <div style="margin-top:20px; display:flex; justify-content:space-between;">
+                    <button onclick="toggleFavorite('ev1', 'ev1Title', 'ev1Desc', this)" data-lang="btnFav">❤ В избранное</button>
+                </div>
+            </div>
+            <!-- Город -->
+            <div class="card project-card hidden-scroll" data-category="city">
+                <h3 data-lang="ev2Title">Озеленение Ташкента</h3>
+                <p data-lang="ev2Desc">Высадка чинар и дубов в городских парках.</p>
+                <div style="margin-top:20px; display:flex; justify-content:space-between;">
+                    <button onclick="toggleFavorite('ev2', 'ev2Title', 'ev2Desc', this)" data-lang="btnFav">❤ В избранное</button>
+                </div>
+            </div>
+            <!-- Животные -->
+            <div class="card project-card hidden-scroll" data-category="animals">
+                <h3 data-lang="ev3Title">Защита питомцев</h3>
+                <p data-lang="ev3Desc">Постройка теплых будок для собак.</p>
+                <div style="margin-top:20px; display:flex; justify-content:space-between;">
+                    <button onclick="toggleFavorite('ev3', 'ev3Title', 'ev3Desc', this)" data-lang="btnFav">❤ В избранное</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <button id="btn-up">↑</button>
+    <footer><p>&copy; 2026 EcoGlobal.</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoVolunteer - Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="preloader"><div class="loader"></div></div>
+
+    <header>
+        <div class="logo">EcoGlobal</div>
+        <nav>
+            <a href="index.html" data-lang="navHome" class="active">Главная</a>
+            <a href="events.html" data-lang="navEvents">Проекты</a>
+            <a href="favorites.html" data-lang="navFav">Избранное</a>
+            <a href="gallery.html" data-lang="navGallery">Галерея</a>
+            <a href="contact.html" data-lang="navContact">Связь</a>
+        </nav>
+        <div style="display:flex; gap:10px;">
+            <button id="theme-toggle">🌓</button>
+            <button id="lang-toggle">RU</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="slider hidden-scroll">
+            <div class="slide active">
+                <h1 data-lang="slide1Title">Спасём природу вместе</h1>
+                <p data-lang="slide1Desc" style="font-size:1.2rem;">Присоединяйтесь к нашим волонтерским инициативам.</p>
+            </div>
+            <div class="slide">
+                <h1 data-lang="slide2Title">Зеленое будущее</h1>
+                <p data-lang="slide2Desc" style="font-size:1.2rem;">Сажаем деревья и очищаем территории.</p>
+            </div>
+        </div>
+
+        <h2 style="text-align:center; margin-bottom: 2rem;" class="hidden-scroll">Наши направления</h2>
+        <div class="cards-grid">
+            <div class="card hidden-scroll">
+                <h3>🌲 Леса</h3>
+                <p>Восстановление зеленых зон, высадка устойчивых к климату деревьев.</p>
+            </div>
+            <div class="card hidden-scroll">
+                <h3>💧 Водоемы</h3>
+                <p>Очистка берегов рек и озер от пластика и мусора.</p>
+            </div>
+            <div class="card hidden-scroll">
+                <h3>🐾 Фауна</h3>
+                <p>Помощь приютам для животных и сохранение биоразнообразия.</p>
+            </div>
+        </div>
+    </div>
+
+    <button id="btn-up">↑</button>
+    <footer><p>&copy; 2026 EcoGlobal. Created for a better future.</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

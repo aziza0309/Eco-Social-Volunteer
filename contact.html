@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Связь - EcoVolunteer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="preloader"><div class="loader"></div></div>
+    <header>
+        <div class="logo">EcoGlobal</div>
+        <nav>
+            <a href="index.html" data-lang="navHome">Главная</a>
+            <a href="events.html" data-lang="navEvents">Проекты</a>
+            <a href="favorites.html" data-lang="navFav">Избранное</a>
+            <a href="gallery.html" data-lang="navGallery">Галерея</a>
+            <a href="contact.html" data-lang="navContact" class="active">Связь</a>
+        </nav>
+        <div style="display:flex; gap:10px;">
+            <button id="theme-toggle">🌓</button>
+            <button id="lang-toggle">RU</button>
+        </div>
+    </header>
+
+    <div class="container" style="display: flex; justify-content: center; align-items: center; min-height: 60vh;">
+        <form class="card hidden-scroll" id="tg-form" style="width: 100%; max-width: 500px;">
+            <h2 data-lang="contactTitle" style="text-align:center; margin-bottom: 2rem;">Оставьте заявку</h2>
+            <div class="form-group">
+                <input type="text" id="name" required>
+                <label data-lang="nameLabel">Ваше имя</label>
+            </div>
+            <div class="form-group">
+                <textarea id="message" rows="4" required></textarea>
+                <label data-lang="msgLabel">Ваше сообщение</label>
+            </div>
+            <button type="submit" id="submit-btn" data-lang="sendBtn" style="width:100%; padding: 15px; font-size: 1.1rem;">Отправить</button>
+        </form>
+    </div>
+    
+    <button id="btn-up">↑</button>
+    <footer><p>&copy; 2026 EcoGlobal.</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
